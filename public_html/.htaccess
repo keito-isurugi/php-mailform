@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ index.php [L]
+</IfModule>
+
+php_value default_charset UTF-8
+php_value mbstring.http_input UTF-8
+php_value mbstring.http_output UTF-8
+php_value mbstring.internal_encoding UTF-8
+php_value error_reporting 22517
+
+php_flag display_errors on
